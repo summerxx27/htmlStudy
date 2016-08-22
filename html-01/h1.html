@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<body>
+
+<!-- 标题 h1-h6 -->
+<h1> 这是一个标题 </h1>
+<!-- 段落 -->
+<p> 这是一个段落 </p>
+<!-- 一个链接 -->
+<a href = "http://summerxx.com"> 这是我的博客网站 </a> </br>
+<!-- 一个横线 -->
+<hr>
+
+<!-- target是定义在什么位置显示, 下面的示例是在新的界面打开一个链接 -->
+<a href = "http://summerxx.com" target = "_black"> 在新的界面打开 </a> <br>
+
+<!-- 定义一个命名锚（anchor）-->
+<!-- 应用:网站的文章目录 -->
+<!-- 当使用命名锚（named anchors）时，我们可以创建直接跳至该命名锚（比如页面中某个小节）的链接，
+这样使用者就无需不停地滚动页面来寻找他们需要的信息了。 -->
+<!-- 使用实例 -->
+<p>
+<a href="#C4">查看 Chapter 4</a></br>
+<a href="#C8">查看 Chapter 8</a>
+</p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+<h2><a name="C4">Chapter 4</a></h2>
+<p>This chapter explains ba bla bla</p>
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+<h2><a name="C8">Chapter 8</a></h2>
+<p>This chapter explains ba bla bla</p>
+
+<!-- 图像标签（img）和源属性（Src)`<img>` 是空标签, 它只包含属性, 并且没有闭合标签。-->
+<!-- 设置对齐方式的图片 bottom, top, middle, left, right-->
+<p>图像 <img src="img_url" align="bottom"> 在文本中</p>
+<!-- 调整图篇的大小 -->
+<img src="img_url" width="200" height="200">
+<!-- 图片链接, 跳转到我的博客站 -->
+<a href = "http://summerxx.com/">
+<img border="0" src="/i/eg_buttonnext.gif" alt = "跳转到我的博客站"/>
+</a>
+<!-- 创建表格 -->
+<h4> 一行二列 </h4>
+<table border="1">
+<!-- 添加一个表头>
+<th>Header</th>
+<th>Another Header</th>
+<!-- 添加一个标题 -->
+<caption>夏天使用HTML创建的表</caption>
+<tr>
+	<td>100</td>
+	<td>200</td>
+</tr>
+</table>
+<!-- 以上是创建一个一行二列 边框为1 值为100 的表格 -->
+<h4> 二行三列 <h4>
+<table border="5">
+<tr>
+	<td>100</td>
+	<td>200</td>
+	<td>300</td>
+</tr>
+<tr>
+	<td>500</td>
+	<td>600</td>
+	<td>700</td>
+</tr>
+<!-- 以上是创建二行三列 边框为2 值为100 200 300 500 600 700 的表格 -->
+
+<!-- 如果出现 空的单元格 放上占位符 不然不会出现边框 -->
+<h4> 空单元格 </h4>
+<table border="1">
+<tr>
+<td>row 1, cell 1</td>
+<td>row 1, cell 2</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>row 2, cell 2</td>
+</tr>
+</table>
+<!-- 跨行或者跨列 -->
+<h4>横跨两列的单元格：</h4>
+<table border="1">
+<tr>
+  <th>姓名</th>
+  <th colspan="2">电话</th>
+</tr>
+<tr>
+  <td>Bill Gates</td>
+  <td>555 77 854</td>
+  <td>555 77 855</td>
+</tr>
+</table>
+
+<h4>横跨两行的单元格：</h4>
+<table border="1">
+<tr>
+  <th>姓名</th>
+  <td>Bill Gates</td>
+</tr>
+<tr>
+  <th rowspan="2">电话</th>
+  <td>555 77 854</td>
+</tr>
+<tr>
+  <td>555 77 855</td>
+</tr>
+</table>
+<!-- 表格可以内嵌标签 实例如下, 在单元格中在放一个表格 -->
+<table border="1">
+<tr>
+  <td>
+   <p>这是一个段落。</p>
+   <p>这是另一个段落。</p>
+  </td>
+  <td>这个单元包含一个表格：
+   <table border="1">
+   <tr>
+     <td>A</td>
+     <td>B</td>
+   </tr>
+   <tr>
+     <td>C</td>
+     <td>D</td>
+   </tr>
+   </table>
+  </td>
+</tr>
+</table>
+
+<!-- 列表 : 可以进行嵌套 -->
+<!-- 无序列表 -->
+<h4>一个无序列表：</h4>
+<ul>
+  <li>iOS
+  <ul>
+  <li>C</li>
+  <li>OC</li>
+  <li>Swift</li>
+</ul>
+  </li>
+  
+  <li>安卓</li>
+  <li>web前端</li>
+</ul>
+<!-- 有序列表 -->
+<h4>一个有序列表：</h4>
+<ul>
+  <li>iOS</li>
+  <li>安卓</li>
+  <li>web前端</li>
+</ul>
+
+<!-- HTML 块元素: 通常会以新行开始-->
+<!-- <h1>, <p>, <ul>, <table>-->
+<!-- HTML <div>元素 -->
+<div style = "color:#00FF00">
+	<h3> This is a Header </h3>
+	<p> 这是一个段落 </p>
+</div>
+<!-- HTML 内联元素: 不会以新行开始-->
+<!-- 例如 <b>, <td>, <a>, <img>-->
+<p><span>some text.</span>some other text.</p>
+
+<!-- 简单布局 -->
+<!-- 整个一个容器 -->
+<div id="container" style="width:300px; height: 600px">
+<!-- Header -->
+<div id="header" style="background-color:#FFA500;">
+<h1 style="margin-bottom:0;">夏天写的一个简单布局</h1></div>
+<!-- 左侧的菜单 -->
+<div id="menu" style="background-color:#FFD700;height:300px;width:150px;float:left;">
+<b>Objective-C</b><br>
+<b>Swift<b><br>
+HTML<br>
+CSS<br>
+JavaScript</div>
+<!-- 右侧的一个表 -->
+<div id="content" style="background-color:#EEEEEE;height:300px;width:150px;float:left;">
+<table border = "1" width = 150px height = 20px>
+	<tr>
+		<td>iOS开发</td>
+	</tr>
+	<tr>
+		<td>iOS开发</td>
+	</tr>
+	<tr>
+		<td>前端开发</td>
+	</tr>
+	<tr>
+		<td>前端开发</td>
+	</tr>
+	<tr>
+		<td>前端开发</td>
+	</tr>
+</table>
+</div>
+<!-- Footer -->
+<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+版权 © summerxx</div>
+</div>
+<!-- 以上就是一个简单的布局 -->
+
+<!-- 表单 -->
+<!-- 普通文本及密码 类似于iOS中的UITextField-->
+<from>
+name: <input type = "text" name = "name"><br>
+age: <input type = "text" name = "age"> <br>
+password: <input type = "password" name = "pwd"> <br>
+</from>
+<!-- 单选按钮 -->
+<from>
+<input type = "radio" name = "sex" value = "male">Male<br>
+<input type = "radio" name = "sex" value = "female">Female<br>
+</from>
+<!-- 复选框 -->
+<form>
+<input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+<input type="checkbox" name="vehicle" value="Car">I have a car <br>
+</form>
+<!-- 提交按钮 类似于iOS中的UIButton-->
+<!-- action是一个动作 -->
+<form name="input" action="html_form_action.php" method="get">
+Username: <input type="text" name="user">
+<!-- type="submit"类似于iOS中button的类型是一个枚举一样 -->
+<input type="submit" value="按钮的名字"> <br>
+</form>
+<!-- 一个简单的下拉列表 -->
+<form action="">
+<select name="可选">
+<option value="1">111</option>
+<option value="2">222</option>
+<!-- 默认选中 -->
+<option value="3" selected>333</option>
+<option value="4">444</option>
+</select>
+</form>
+
+<!-- HTML颜色 -->
+<!-- HTML 颜色由一个十六进制符号来定义，这个符号由红色、绿色和蓝色的值组成（RGB）。
+种颜色的最小值是0（十六进制：#00）。最大值是255（十六进制：#FF） -->
+<p style="background-color:rgb(230,188,254)">
+通过 rbg 值设置背景颜色
+</p>
+<!-- 颜色名字 -->
+<!-- 可查阅这个文档 http://www.runoob.com/html/html-colornames.html -->
+
+<!-- 一个简单的脚本-->
+<p id="test">
+JavaScript 可以触发事件，就像按钮点击。</p>
+<script>
+function myFunction()
+{
+	document.getElementById("test").innerHTML="Hi JavaScript!";
+}
+</script>
+<button type="button" onclick="myFunction()">点我</button>
+<!-- 字符实体 -->
+<!-- 小于号: 我们必须这样写：&lt; 或 &#60; 或 &#060;-->
+<!-- 空格: &nbsp; -->
+</body>
+</html>
